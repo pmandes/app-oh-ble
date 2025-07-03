@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "permission_reason_bluetooth_use",
+      "value": "Allow the app to use Bluetooth for managing device connections."
+    },
+    {
+      "name": "permission_reason_bluetooth_discover",
+      "value": "Allow the app to discover and pair with nearby Bluetooth devices."
+    },
+    {
+      "name": "permission_reason_bluetooth_access",
+      "value": "Allow the app to access Bluetooth functions for data transfer."
+    },
+    {
+      "name": "permission_reason_location_coarse",
+      "value": "Allow the app to access your approximate location for Bluetooth scanning."
+    },
+    {
+      "name": "permission_reason_location_precise",
+      "value": "Allow the app to access your precise location for Bluetooth interactions."
+    }
+  ]
+}
