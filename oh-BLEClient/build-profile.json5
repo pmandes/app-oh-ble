@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\pmandes\\.ohos\\config\\default_BLEClient_oG64ViUAB5JxZglB-X_p_ELtDdvg4nOOleKRjxRTAVg=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BFDBF12319488440172051548C8142AE8042A12A9289B3AE2A6999A66923862E9418AA873A763EF",
+          "profile": "C:\\Users\\pmandes\\.ohos\\config\\default_BLEClient_oG64ViUAB5JxZglB-X_p_ELtDdvg4nOOleKRjxRTAVg=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\pmandes\\.ohos\\config\\default_BLEClient_oG64ViUAB5JxZglB-X_p_ELtDdvg4nOOleKRjxRTAVg=.p12",
+          "storePassword": "0000001B6020C24921F5C11AE1F49D4FA4217D888BF79187B6D4D25B3BAAD7DD68CB36952B6AAD94ADAEE7"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.0(18)",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
