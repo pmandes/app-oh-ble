@@ -3,15 +3,14 @@
     "signingConfigs": [
       {
         "name": "default",
-        "type": "HarmonyOS",
         "material": {
-          "certpath": "C:\\Users\\pmandes\\.ohos\\config\\default_oh-BLEClient_FmXoMSQcGhTQdmeLaqAtjKiY8Z7dgKEnKX47V0J4fko=.cer",
+          "certpath": "C:/Users/pmandes/.ohos/config/openharmony/default_BTHost_QflF_rRyMJvWxLZJxE1fyb0gNstaIYxvKRaivjtMZsk=.cer",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B60F4FF56A6EC6D92E88DD21B89FB07759DA306D5F2B9A128FB49C6F6FC537A92C024C777B49C01",
-          "profile": "C:\\Users\\pmandes\\.ohos\\config\\default_oh-BLEClient_FmXoMSQcGhTQdmeLaqAtjKiY8Z7dgKEnKX47V0J4fko=.p7b",
+          "keyPassword": "0000001B7B58D4F31896C79611F3F092FA38708A17605872681ED4AEE8F47F460F5A99F148EC92B3D6528A",
+          "profile": "C:/Users/pmandes/.ohos/config/openharmony/default_BTHost_QflF_rRyMJvWxLZJxE1fyb0gNstaIYxvKRaivjtMZsk=.p7b",
           "signAlg": "SHA256withECDSA",
-          "storeFile": "C:\\Users\\pmandes\\.ohos\\config\\default_oh-BLEClient_FmXoMSQcGhTQdmeLaqAtjKiY8Z7dgKEnKX47V0J4fko=.p12",
-          "storePassword": "0000001B14A09D73D69A74B966C23D3C44FAA022A647944C08CBE3752D1BDA3CEE3B1C185D52218DDD4C9D"
+          "storeFile": "C:/Users/pmandes/.ohos/config/openharmony/default_BTHost_QflF_rRyMJvWxLZJxE1fyb0gNstaIYxvKRaivjtMZsk=.p12",
+          "storePassword": "0000001BA8FEE9CF0BB9BC32D2B556B9A2E8E3FDCF1FC88429B391FD92BF10C0DECB1E7519FFD84F1FB926"
         }
       }
     ],
@@ -19,9 +18,9 @@
       {
         "name": "default",
         "signingConfig": "default",
-        "targetSdkVersion": "5.1.0(18)",
-        "compatibleSdkVersion": "5.0.1(13)",
-        "runtimeOS": "HarmonyOS",
+        "compileSdkVersion": 18,
+        "compatibleSdkVersion": 18,
+        "runtimeOS": "OpenHarmony",
         "buildOption": {
           "strictMode": {
             "caseSensitiveCheck": true,
