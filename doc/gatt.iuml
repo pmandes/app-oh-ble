@@ -1,0 +1,31 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam ArrowColor #444
+skinparam ArrowThickness 1
+skinparam DefaultFontName Sans-Serif
+
+rectangle "Smartwatch (Central / Client)" as Watch
+rectangle "Android Phone (Central / Client)" as Android
+rectangle "OpenHarmony Phone (Central / Client)" as OH 
+node "IoT Device (Peripheral / GATT Server) Service: <UUID>" as IoT
+
+' --- Advertising from Peripheral to all Centrals ---
+IoT ..> Watch : Advertising (Service UUID)
+IoT ..> Android : Advertising (Service UUID)
+IoT ..> OH : Advertising (Service UUID)
+
+' --- Example GATT exchanges ---
+Android --> IoT : GATT Request
+IoT --> Android : GATT Response
+
+OH --> IoT : GATT Request
+IoT --> OH : GATT Response
+
+Watch --> IoT : GATT Request
+IoT --> Watch : GATT Response
+
+note right of IoT
+  Peripheral may or may not support
+  multiple simultaneous central connections.
+end note
+@enduml

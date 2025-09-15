@@ -1,0 +1,20 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam ArrowColor #555
+skinparam DefaultFontName Sans-Serif
+
+package "Temperature Service" as Svc {
+  rectangle "Primary Service\nUUID: 12345678-1234-1000-8000-00805F9B34FB" as Service
+  rectangle "Characteristic: Temperature\nUUID: 87654321-1234-1000-8000-00805F9B34FB\nProperties: READ, NOTIFY\nFormat: float32/int32 (LE)" as TempChar
+  rectangle "Descriptor: CCCD\nUUID: 00002902-0000-1000-8000-00805F9B34FB\nEnable Notify/Indicate" as CCCD
+  rectangle "Characteristic: Unit\nUUID: 87654322-1234-1000-8000-00805F9B34FB\nProperties: READ, WRITE\nFormat: uint8 (0=°C,1=°F,…)" as UnitChar
+}
+
+Service -- TempChar
+TempChar -- CCCD
+Service -- UnitChar
+
+note bottom of Service
+  Primary service containing two characteristics.
+end note
+@enduml

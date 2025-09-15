@@ -7,11 +7,11 @@
         "material": {
           "certpath": "C:\\Users\\pmandes\\.ohos\\config\\default_oh-BLEClient_FmXoMSQcGhTQdmeLaqAtjKiY8Z7dgKEnKX47V0J4fko=.cer",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B60F4FF56A6EC6D92E88DD21B89FB07759DA306D5F2B9A128FB49C6F6FC537A92C024C777B49C01",
+          "keyPassword": "0000001B5A17B18B152CEA6DF73880711E3E0AA5A428227F1F9B68315460C8DFB83A8260AC8669E276F763",
           "profile": "C:\\Users\\pmandes\\.ohos\\config\\default_oh-BLEClient_FmXoMSQcGhTQdmeLaqAtjKiY8Z7dgKEnKX47V0J4fko=.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "C:\\Users\\pmandes\\.ohos\\config\\default_oh-BLEClient_FmXoMSQcGhTQdmeLaqAtjKiY8Z7dgKEnKX47V0J4fko=.p12",
-          "storePassword": "0000001B14A09D73D69A74B966C23D3C44FAA022A647944C08CBE3752D1BDA3CEE3B1C185D52218DDD4C9D"
+          "storePassword": "0000001B05501E326D0868162077A91ADC799C94DEB002609675BFFD3789A7A9B9D8B7C0C0CE5177BD886F"
         }
       }
     ],

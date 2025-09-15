@@ -1,0 +1,26 @@
+@startuml
+actor User
+participant "UI" as UI
+participant "BleManager" as BM
+participant "BLE Stack (Open Harmony)" as Stack
+participant "Temperature Sensor (BLE Server)" as Sensor
+
+User -> UI : taps **Connect**
+UI -> BM  : connect()
+BM -> Stack : startScan(serviceUuid)
+Stack -> Sensor : scan request
+Sensor --> Stack : advertising packet (UUID match)
+Stack --> BM : BLEDeviceFind
+BM -> Stack : stopScan()
+BM -> Stack : connect(deviceId)
+Stack -> Sensor : connectReq
+Sensor --> Stack : connection complete
+Stack --> BM : BLEConnectionStateChange(CONNECTED)
+BM -> Stack : getServices()
+Stack --> BM : services[]
+BM -> Stack : readCharacteristic(TEMP_CHAR)
+Stack -> Sensor : Read Request
+Sensor --> Stack : Read Response (temp bytes)
+Stack --> BM : value
+BM -> UI : onTemperatureRead(temp)
+@enduml
